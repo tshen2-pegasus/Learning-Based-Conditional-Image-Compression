@@ -62,12 +62,6 @@ python train.py --model ours_psnr --loss mse --lambda <λ>
 python train.py --model ours_msssim --loss msssim --lambda <λ>
 ```
 
-The training loss functions are:
-
-```
-L_PSNR    = R_ỹ + R_z̃ + λ × MSE(x, x̂)
-L_MS-SSIM = R_ỹ + R_z̃ + λ × (1 − MS-SSIM(x, x̂))
-```
 
 ---
 
