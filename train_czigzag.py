@@ -284,7 +284,7 @@ def parse_args(argv):
     )
     parser.add_argument(
         "-d", "--dataset", type=str, 
-        default='/data/Dataset/IRdataset2/small/',
+        default='/data/Dataset/IRdataset2/train/',
         help="Training dataset"
     )
     parser.add_argument(
