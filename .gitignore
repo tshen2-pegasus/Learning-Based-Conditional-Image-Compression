@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter / Python tooling
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Local eval artifacts
+compressai/utils/eval_model/output/
+compressai/utils/eval_model/*.jpg
+compressai/utils/eval_model/*results*.json
