@@ -52,15 +52,12 @@ pip install pybind11
 
 ## Training
 
-We provide two model variants optimized for different distortion metrics:
 
 ```bash
-# Train for PSNR (pixel fidelity)
-python train.py --model ours_psnr --loss mse --lambda <λ>
 
-# Train for MS-SSIM (perceptual quality)
-python train.py --model ours_msssim --loss msssim --lambda <λ>
-```
+python train_czigzag.py --model czigzag --lambda <λ>
+
+
 
 
 ---
