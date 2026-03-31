@@ -65,7 +65,13 @@ python train_czigzag.py --model czigzag --lambda <λ>
 ## Evaluation
 
 ```bash
-python eval.py --dataset kodak --checkpoint <path_to_checkpoint>
+# Run the evaluation entrypoint used in this repo:
+python compressai/utils/eval_model/__main__.py \
+  --dataset <path_to_image_folder_or_coco_root> \
+  --path <path_to_checkpoint> \
+  --architecture czigzag
+
+
 ```
 
 Bit rates (BPP) reported for our model include the bits used to encode **both** the original image `x` and the low-resolution image `x_LR`.
